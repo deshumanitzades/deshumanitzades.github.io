@@ -2898,11 +2898,12 @@ p.tag-wall, span.tag-wall{
     #dones-text .text-black{
       transform: translateY(-200%);
     }
+    #dones-text, #testimoni-dones{
+      transform: translateY(-6px);
+    }
   }
-  #dones-text, #testimoni-dones{
-    transform: translateY(-6px);
-  }
-  }
+
+
 
 
 
