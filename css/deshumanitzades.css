@@ -653,6 +653,11 @@ span.burger{
   padding-left: 0!important;
 }
 /* languages */
+#m-lang{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .nav-lang{
   position: relative;
   padding: 0;
