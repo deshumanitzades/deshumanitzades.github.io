@@ -52,7 +52,7 @@ h1.big{
   overflow: hidden;
   background:#1b1b1b;
 }
-@media (min-width:576px) {
+@media (min-width:768px) {
   .pace{
     width: 400px;
   }
@@ -172,7 +172,7 @@ h1.big{
   .des .text-content p.destacat.big, .des .text-content .p.destacat.big{
     font-size: 50px;
   }
-@media (min-width:576px) {
+@media (min-width:768px) {
   .des h1, .des .h1{
     font-size: 80px;
   }
@@ -285,7 +285,7 @@ h1.big{
 }
 @media (min-width:1600px) {
   .des h1.no-title, .des .h1.no-title{
-    font-size: 100px;
+    font-size: 90px;
     letter-spacing: -4px;
     line-height: 90%;
   }
@@ -299,7 +299,11 @@ h1.big{
   .des .text-content p.destacat, .des .text-content .p.destacat{
     font-size: 40px;
   }
-
+}
+@media (min-width:2000px) {
+  .des h1, .des .h1{
+    font-size: 200px;
+  }
 }
 .light{
   font-weight: 300!important;
@@ -395,7 +399,7 @@ body{
 .margins{
   padding:1.5rem!important;
 }
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     .margins{
       padding:2rem!important;
     }
@@ -423,7 +427,7 @@ body{
 }
 /* buttons */
 
-@media (min-width:576px) {
+@media (min-width:768px) {
   button{
     max-width: 300px;
   }
@@ -534,7 +538,7 @@ a{
   /* border-bottom: 1px solid rgba(255,255,255,0.5); */
   padding-bottom: 2rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #navbar li{
     border-top: 1px solid rgba(255,255,255,0.5);
     /* border-bottom: 1px solid rgba(255,255,255,0.5); */
@@ -702,6 +706,12 @@ span.burger{
     #navbar.scrolled:hover .nav-lang .lang-link::after{
       background-color: white;
     }
+    #navbar .nav-lang .lang-link:hover{
+      color: rgba(255,255,255,0.5);
+    }
+    #navbar.scrolled:hover .nav-lang .lang-link:hover{
+      color: rgba(255,255,255,0.5);
+    }
 
   }
 .navbar-nav-scroll{
@@ -817,7 +827,7 @@ nav a, nav .a-title{
   padding-left: 0;
   line-height: 130%;
 }
-@media (min-width:576px) {
+@media (min-width:768px) {
   nav a, nav .a-title{
     font-size: 12px;
     letter-spacing: 1px;
@@ -873,7 +883,7 @@ nav a, nav .a-title{
   position: absolute;
   top: -32px;
 }
-@media (min-width:576px) {
+@media (min-width:768px) {
   .bordered-small{
     border-radius: 12px;
   }
@@ -925,6 +935,13 @@ section.section-img{
 @media (min-width:576px) {
   section.section-img{
 
+    transform: translateY(-75px);
+
+  }
+}
+@media (min-width:768px) {
+  section.section-img{
+
     transform: translateY(-285px);
 
   }
@@ -937,6 +954,11 @@ section.section-img{
   }
   #img07{
     transform: translateY(-250px);
+  }
+}
+@media (min-width: 2000px) {
+  section.section-img{
+    transform: translateY(-325px);
   }
 }
 section.section-portada{
@@ -957,6 +979,7 @@ section.section-portada{
 /* portada */
 #section-portada{
   height: calc(100vh - 150px);
+  min-height: 300px;
 }
 section.section-portada .block-img.portada {
   overflow: hidden;
@@ -986,6 +1009,16 @@ section.section-portada .block-img.portada{
   top: 50%;
   left: 50%;
   transform: translate(-50% , -100%);
+}
+@media (min-width: 768px) {
+  .nie-titol{
+    transform: translate(-50% , -70%);
+  }
+}
+@media (min-width:768px) {
+  .nie-titol{
+    transform: translate(-50% , -100%);
+  }
 }
 .nie-titol h2{
   width: 100%;
@@ -1019,7 +1052,7 @@ h2.h3.subtitol{
   font-weight: 300;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   /* section.section-portada .block-img.portada picture img{
     position: absolute;
     top: 50%;
@@ -1055,6 +1088,7 @@ h2.h3.subtitol{
 
 .block-img{
   height: 100vh;
+  min-height: 300px;
 }
 #img01 .block-img{
   background-image: url("../img/des01-mobile.jpg");
@@ -1254,7 +1288,7 @@ position: relative;
 .sticky-bottom.mobile-no{
   position: relative;
 }
-@media (min-width:576px) {
+@media (min-width:768px) {
   .sticky-bottom.mobile-no{
     position: sticky;
     bottom:0;
@@ -1363,7 +1397,7 @@ position: relative;
 #testimoni-sidebar h3{
   font-size: 8px;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #testimoni-sidebar h3{
     font-size: 10px;
   }
@@ -1381,7 +1415,7 @@ position: relative;
 .right-sidebar.sidebar-info svg{
 max-height: 100vh;
 }
-@media (min-width:576px) {
+@media (min-width:768px) {
   .right-sidebar .sticky.top{
   top: 48px;
   width: auto;
@@ -1432,12 +1466,21 @@ max-height: 100vh;
   max-height: calc(100vh - 80px);
   }
 }
+@media (min-width:2000px) {
+  .right-sidebar.sidebar-info .sticky.top{
+  max-width: 500px;
+  }
+  .right-sidebar.sidebar-info .sticky.top .svg-content{
+
+  max-width: 300px;
+  }
+}
 
 .img-card{
   width: 100%;
   min-height: 150px;
 }
-@media (min-width:576px) {
+@media (min-width:768px) {
   .img-card{
     width: 100%;
     min-height: 130px;
@@ -1470,7 +1513,7 @@ max-height: 100vh;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-@media (min-width:576px) {
+@media (min-width:768px) {
   #cap02-text a:first-child .img-card{
     background-size: cover;
   }
@@ -1513,7 +1556,7 @@ max-height: 100vh;
   opacity: .65;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #cap02-text a:first-child .img-card::before{
     border-radius: 12px;
   }
@@ -1611,7 +1654,7 @@ a.card-link:hover span:not(.mobile-arrow, .movie){
   box-shadow: 4px 4px 60px rgba(0,0,0,0.1);
   transition: all 0.2s ease-in-out;
   text-shadow: none;
-  width: 75%;
+  width: 100%;
   height: auto;
   margin: 16px;
   max-width: calc(100% - 32px);
@@ -1622,7 +1665,7 @@ a.card-link:hover span:not(.mobile-arrow, .movie){
 .download-card p, .download-card span{
   color: white!important;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .download-card p, .download-card span{
     color: black!important;
   }
@@ -1632,6 +1675,11 @@ a.card-link:hover span:not(.mobile-arrow, .movie){
 
 }
 @media (min-width:576px) {
+  .download-card{
+    width: 50%;
+  }
+}
+@media (min-width:768px) {
   .download-card{
     top: 310px;
     bottom: inherit;
@@ -1645,6 +1693,11 @@ a.card-link:hover span:not(.mobile-arrow, .movie){
   .download-card{
     max-width: 300px;
     top: 32%;
+  }
+}
+@media (min-width:2000px) {
+  .download-card{
+    top: 27%;
   }
 }
 .download-card span{
@@ -1666,7 +1719,7 @@ a.card-link:hover span:not(.mobile-arrow, .movie){
   font-size: 16px;
 }
 
-@media (min-width:576px) {
+@media (min-width:768px) {
   .card-arrow,.card-icon{
     top: 16px;
     right: 16px;
@@ -1778,7 +1831,7 @@ padding-top: 1rem;
   letter-spacing: 1.75px;
 }
 
-@media (min-width:575px) {
+@media (min-width: 768px) {
   .info .number.highlight{
     font-size:90px;
   }
@@ -1824,14 +1877,15 @@ padding-top: 1rem;
     font-weight: 200;
     letter-spacing: -3px;
   }
-  @media (min-width: 1400px) {
-    .info-text.big{
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 130%;
-      letter-spacing: 2px;
-    }
+}
+@media (min-width: 1400px) {
+  .info-text.big{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 2px;
   }
+
 }
 
 
@@ -1878,7 +1932,7 @@ position: relative;
 #counter-animated{
   min-height: 300px;
 }
-@media (min-width:576px) {
+@media (min-width:768px) {
   #counter-animated{
     min-height: 50vh;
   }
@@ -1911,7 +1965,7 @@ position: relative;
       min-height: 100vh;
     }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #counter-line::after{
     width: 30%;
     top: 30%;
@@ -1943,6 +1997,15 @@ position: relative;
     height: 3px;
   }
 }
+@media (min-width: 2000px) {
+  .info.tag-container{
+    width: 75%;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+
+  }
+}
 
 /* #counter-animated{
   position:absolute;
@@ -1956,6 +2019,16 @@ position: relative;
   transform: translateY(0%);
   line-height: 100%
 }
+@media (min-width:576px) {
+  #mitjana-anys{
+    transform: translateY(-50%);
+  }
+}
+@media (min-width:768px) {
+  #mitjana-anys{
+    transform: translateY(0%);
+  }
+}
 @media (min-width:992px) {
   #mitjana-anys{
     position: absolute;
@@ -1963,6 +2036,9 @@ position: relative;
     bottom: inherit;
     transform: translateY(-55%);
   }
+}
+@media (min-width:2000px) {
+
 }
 p.tag{
   font-family: "roboto-mono", monospace;
@@ -2020,7 +2096,7 @@ p.tag-wall, span.tag-wall{
   overflow: hidden;
   padding:  0 0 5rem 0 ;
 }
-@media (min-width:576px) {
+@media (min-width:768px) {
   p.tag-wall{
     margin: .75rem;
   }
@@ -2080,7 +2156,7 @@ p.tag-wall, span.tag-wall{
     left: 0%;
     transform: rotate(-4deg);
   }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .tag.small{
       font-size: 55px;
       letter-spacing: 2px;
@@ -2238,6 +2314,61 @@ p.tag-wall, span.tag-wall{
     }
 
   }
+  @media (min-width: 2000px) {
+    .tag.small, .tag-wall.small{
+      font-size: 50px;
+      letter-spacing: 2px;
+      padding: 32px 48px;
+    }
+    .tag.big, .tag-wall.big{
+      font-size: 95px;
+      letter-spacing: 2px;
+      padding: 48px 64px;
+    }
+    .tag.big, .tag-wall.big{
+      font-size: 90px;
+    }
+    .tag.one{
+      top:10%;
+      left: 20%;
+      transform: rotate(2deg);
+    }
+    .tag.two{
+      top: 16%;
+      left: inherit;
+      right: 30%;
+      transform: rotate(-9deg);
+    }
+    .tag.three{
+      top: 28%;
+      right: 35%;
+      transform: rotate(8deg);
+    }
+    .tag.four{
+      top: 36%;
+      left: inherit;
+      right: 30%;
+      transform: rotate(5deg);
+    }
+    .tag.five{
+      top: 24%;
+      right: 25%;
+      left: inherit;
+      transform: rotate(15deg);
+    }
+    .tag.six{
+      top: 55%;
+      right:  35%;
+      transform: rotate(-5deg);
+    }
+    .tag.seven{
+      top: 50%;
+      left: 0%;
+      right: inherit;
+      left: inherit;
+      transform: rotate(-5deg);
+    }
+  }
 
   /* testimonis */
   .testimoni{
@@ -2302,7 +2433,7 @@ p.tag-wall, span.tag-wall{
   .testimoni-img::after{
 
   }
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     .testimoni{
       max-width: calc( 58.33% - 24px);
       padding-bottom: 32px;
@@ -2419,7 +2550,7 @@ p.tag-wall, span.tag-wall{
     text-transform: uppercase!important;
     font-weight: 500!important;
   }
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     .text-temp-01 p, .text-temp-02 p,.text-temp-03 p{
 
       font-size: 10px!important;
@@ -2461,7 +2592,7 @@ p.tag-wall, span.tag-wall{
       transform: rotate(-90deg) translateY(-2px);
     }
   }
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     .text-temp-01{
       transform: rotate(-90deg) translateY(-14px);
     }
@@ -2564,7 +2695,7 @@ p.tag-wall, span.tag-wall{
       -webkit-transition: all 0.2s ease-out;
       -o-transition: all 0.2s ease-out;
   }
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     .info-text-container .text-content{
       opacity: 0;
       transform: translateY(25%);
@@ -2601,7 +2732,7 @@ p.tag-wall, span.tag-wall{
     transition: all 0.2s ease-in-out;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.2);;
   }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .play-btn, .go-back-btn{
       top: 75%;
     }
@@ -2665,7 +2796,7 @@ p.tag-wall, span.tag-wall{
     right: 10%;
     background-color: black;
   }
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     #resist{
       transform: rotate(-3deg);
       color: var(--des-red);
@@ -2722,7 +2853,7 @@ p.tag-wall, span.tag-wall{
     }
   }
   #dones-text, #testimoni-dones{
-    transform: translateY(-5px);
+    transform: translateY(-6px);
   }
   #dones-text .text-black{
     transform: translateY(-75%);
@@ -2731,7 +2862,7 @@ p.tag-wall, span.tag-wall{
     height:100px;
     margin-left: 0!important;
   }
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     #dones-text .text-black{
       transform: translateY(-350px);
     }
@@ -2751,12 +2882,21 @@ p.tag-wall, span.tag-wall{
   }
   @media (min-width:1200px) {
     #dones-text .text-black{
-      transform: translateY(-75%);
+      transform: translateY(-65%);
     }
     #dones-text{
       height: auto;
       margin:inherit;
     }
+  }
+  @media (min-width:2000px) {
+    #dones-text .text-black{
+      transform: translateY(-200%);
+    }
+  }
+  #dones-text, #testimoni-dones{
+    transform: translateY(-6px);
+  }
   }
 
 
@@ -2798,7 +2938,7 @@ p.tag-wall, span.tag-wall{
     color: white;
   }
 
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     .block-dones{
       border: 0;
       border-top: 1px solid black;
@@ -2813,7 +2953,7 @@ p.tag-wall, span.tag-wall{
   #credits{
     transform: translateY(40px);
   }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     #parche{
       transform: translateY(0px);
     }
@@ -2852,7 +2992,7 @@ p.tag-wall, span.tag-wall{
     background-size: cover;
     background-position: center 15%;
   }
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       #eli{
         background-image: url("../img/pag-eli-gonzalez-ipad.jpg");
       }
@@ -2868,7 +3008,7 @@ p.tag-wall, span.tag-wall{
     background-size: cover;
     background-position: center 15%;
   }
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       #carol{
         background-image: url("../img/pag-carol-murcia-ipad.jpg");
       }
@@ -2884,7 +3024,7 @@ p.tag-wall, span.tag-wall{
   background-size: cover;
   background-position: center 15%;
 }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     #dalila{
       background-image: url("../img/pag-dalila-argueta-ipad.jpg");
     }
@@ -2905,7 +3045,7 @@ p.tag-wall, span.tag-wall{
       -webkit-transition: all 0.2s ease-out;
       -o-transition: all 0.2s ease-out;
   }
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     #sub-nav{
       position: fixed;
       bottom: 0;
@@ -2961,7 +3101,7 @@ p.tag-wall, span.tag-wall{
   #sub-nav .testimoni-text {
     border-top: 1px solid var(--des-red);
   }
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     #sub-nav .testimoni-text {
       border-top: 0px solid var(--des-red);
     }
@@ -2973,7 +3113,7 @@ p.tag-wall, span.tag-wall{
     left: inherit;
     z-index: 150;
   }
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     .go-back-btn{
       position: fixed;
       top: 64px;
@@ -3016,7 +3156,7 @@ p.tag-wall, span.tag-wall{
     }
   }
   /* Modal and video embed */
-  @media (min-width:576px) {
+  @media (min-width:768px) {
     .modal-dialog.modal-dialog-centered{
       min-height: calc(100% - 1rem)!important;
     }
@@ -3104,7 +3244,7 @@ p.tag-wall, span.tag-wall{
   #myModal button .material-symbols-outlined{
     font-size: 32px;
   }
-      @media (min-width:576px) {
+      @media (min-width:768px) {
         .modal-dialog {
             max-width: 80vw!important;
           }
@@ -3209,7 +3349,7 @@ p.tag-wall, span.tag-wall{
       background-image: url("../img/11-640px.jpg");
     }
   }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     @keyframes slide {
       0%{
         background-image: url("../img/1-992px.jpg");
