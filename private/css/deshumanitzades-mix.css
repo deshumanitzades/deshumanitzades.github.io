@@ -1,0 +1,154 @@
+@import url("spacing.min.css");
+
+/*initial proportions*/
+
+.h100{
+  height: 100vh;
+}
+.h150{
+  height: 150vh;
+}
+.h50{
+  height: 50vh;
+}
+.w100{
+  width: 100%;
+}
+h1.big{
+  font-size: 150px;
+}
+.bg-yellow{
+  background-color:yellow;
+}
+
+/* colors */
+body{
+  --des-red: #EE3A3A;
+  --des-red-2: #C24747;
+  --des-blue: #55A0B8;
+  --des-blue-2: #13728F;
+  --des-magenta: #F83470;
+  --des-magenta-2: #C72959;
+  --des-black: #161616;
+  --des-black-pure: black;
+  background-color: white;
+  font-size: 16px; /* Base font-size for spacing -- 1rem = 16px */
+}
+
+.des-red{
+    color: var(--des-red);
+  }
+.des-red-2{
+    color: var(--des-red-2);
+  }
+.des-blue{
+    color: var(--des-blue);
+  }
+.des-blue-2{
+    color: var(--des-blue-2);
+  }
+.des-magenta{
+    color: var(--des-magenta);
+  }
+.des-magenta-2{
+    color: var(--des-magenta-2);
+  }
+.des-black{
+    color: var(--des-black);
+  }
+.des-black-pure{
+    color: var(--des-black-pure);
+  }
+
+.bg-des-red{
+    background-color: var(--des-red);
+  }
+.bg-des-red-2{
+    background-color: var(--des-red-2);
+  }
+.bg-des-blue{
+    background-color: var(--des-blue);
+  }
+.bg-des-blue-2{
+    background-color: var(--des-blue-2);
+  }
+.bg-des-magenta{
+    background-color: var(--des-magenta);
+  }
+.bg-des-magenta-2{
+    background-color: var(--des-magenta-2);
+  }
+.bg-des-black{
+    background-color: var(--des-black);
+  }
+/**scrolltrigger structure*/
+#container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#container .panel {
+  position: relative;
+  will-change: transform;
+}
+#container .panel:last-child {
+position: absolute;
+top: 0;
+}
+
+/*bg-img-structure*/
+.block-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  background-attachment: fixed;
+
+}
+.block-img:nth-child(1){
+  background-image: url("../img/Exilis-C1.jpg");
+  background-position: 30% 0;
+
+}
+.block-img:nth-child(4){
+  background-image: url("../img/Exilis-C1.jpg");
+  background-position: 30% 0;
+}
+.block-img:nth-child(3){
+  background-image: url("../img/ELI_V4.jpg");
+  background-position: 30% 0;
+}
+
+/*sticky*/
+#intro, {
+  position: relative;
+}
+.sticky{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.order-top{
+z-index: 10;
+position: relative;
+}
+.over-block{
+  z-index: 5;
+}
+.behind-block{
+  height: 125vh;
+  z-index: -1;
+}
+
+.sticky-bottom{
+  position: sticky;
+  bottom: -25vh;
+  transform: translateY(-25vh);
+}
+.continued{
+  transform: translateY(-25vh);
+}

@@ -1,0 +1,100 @@
+@import url("spacing.min.css");
+
+/*initial proportions*/
+
+.h100{
+  height: 100vh;
+}
+.h150{
+  height: 150vh;
+}
+.h50{
+  height: 50vh;
+}
+.w100{
+  width: 100vw;
+}
+h1.big{
+  font-size: 150px;
+}
+.bg-yellow{
+  background-color:yellow;
+}
+
+/* colors */
+body{
+  --des-red: #EE3A3A;
+  --des-red-2: #C24747;
+  --des-blue: #55A0B8;
+  --des-blue-2: #13728F;
+  --des-magenta: #F83470;
+  --des-magenta-2: #C72959;
+  --des-black: #161616;
+  --des-black-pure: black;
+  background-color: white;
+  font-size: 16px; /* Base font-size for spacing -- 1rem = 16px */
+}
+
+.des-red{
+    color: var(--des-red);
+  }
+.des-red-2{
+    color: var(--des-red-2);
+  }
+.des-blue{
+    color: var(--des-blue);
+  }
+.des-blue-2{
+    color: var(--des-blue-2);
+  }
+.des-magenta{
+    color: var(--des-magenta);
+  }
+.des-magenta-2{
+    color: var(--des-magenta-2);
+  }
+.des-black{
+    color: var(--des-black);
+  }
+.des-black-pure{
+    color: var(--des-black-pure);
+  }
+
+.bg-des-red{
+    background-color: var(--des-red);
+  }
+.bg-des-red-2{
+    background-color: var(--des-red-2);
+  }
+.bg-des-blue{
+    background-color: var(--des-blue);
+  }
+.bg-des-blue-2{
+    background-color: var(--des-blue-2);
+  }
+.bg-des-magenta{
+    background-color: var(--des-magenta);
+  }
+.bg-des-magenta-2{
+    background-color: var(--des-magenta-2);
+  }
+.bg-des-black{
+    background-color: var(--des-black);
+  }
+/**scrolltrigger structure*/
+
+#container{
+position: absolute;
+top: 0;
+left: 0;
+}
+#uno{
+  position: absolute;
+
+  z-index: 10;
+}
+#dos{
+  position: absolute;
+
+  z-index: 1;
+}
