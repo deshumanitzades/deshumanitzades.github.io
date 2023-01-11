@@ -2978,13 +2978,16 @@ p.tag-wall, span.tag-wall{
     margin-bottom: 0.25rem;
   }
   #credits img.logo-02{
-    max-height: 75px;
+    max-height: 70px;
+    min-height: 70px;
   }
   #credits img.logo-03{
-    max-height: 85px;
+    max-height: 80px;
+    min-height: 80px;
   }
   #credits img.logo-01{
-    max-height: 50px;
+    max-height: 45px;
+    min-height: 45px;
   }
   .credits-logos{
     border: 0;
