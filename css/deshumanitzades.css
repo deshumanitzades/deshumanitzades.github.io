@@ -1697,12 +1697,12 @@ a.card-link:hover span:not(.mobile-arrow, .movie){
 @media (min-width:992px) {
   .download-card{
     max-width: 300px;
-    top: 32%;
+    top: 300px;
   }
 }
 @media (min-width:2000px) {
   .download-card{
-    top: 27%;
+    top: 375px;
   }
 }
 .download-card span{
@@ -1854,14 +1854,11 @@ padding-top: 1rem;
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:992px) and (min-height: 825px) {
   .info:first-child{
   padding-top: 0rem;
   }
-  .info .number.highlight.bigger{
-    line-height: 100%;
-    letter-spacing: -3px;
-  }
+
   .info-text{
     font-size: 12px;
     font-weight: 500;
@@ -1877,6 +1874,9 @@ padding-top: 1rem;
   .info .number.highlight{
     font-size:100px;
   }
+
+}
+@media (min-width: 992px) and (min-height: 825px) {
   .info .number.highlight.bigger{
     font-size:300px;
     font-weight: 200;
@@ -2300,7 +2300,7 @@ p.tag-wall, span.tag-wall{
     }
     .tag.seven{
       top: 65%;
-      left: 0%;
+      left: 45%;
       right: inherit;
       left: inherit;
       transform: rotate(-5deg);
