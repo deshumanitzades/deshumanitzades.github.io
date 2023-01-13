@@ -40,7 +40,7 @@ $(window).scroll(function() {
           countNum: countTo
         },
         {
-          duration: 2000,
+          duration: 3000,
           easing: 'swing',
           step: function() {
             var num = Math.floor(this.countNum).toLocaleString().replace(",",".")
@@ -99,7 +99,7 @@ $(window).scroll(function() {
           countNum: countTo
         },
         {
-          duration: 2000,
+          duration: 3500,
           easing: 'swing',
           step: function() {
             var num = Math.floor(this.countNum).toLocaleString().replace(",",".")
@@ -128,7 +128,7 @@ $(window).scroll(function() {
           countNum: countTo
         },
         {
-          duration: 2000,
+          duration: 3500,
           easing: 'swing',
           step: function() {
             var num = Math.floor(this.countNum).toLocaleString().replace(",",".")
