@@ -100,6 +100,60 @@ paceOptions = {
     onToggle: () => fixedNav(),
   });
 
+//change navbar active class
+function activeLink01() {
+  $("#link01").toggleClass("active");
+  $("#link02").toggleClass("active");
+}
+
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.create({
+  trigger: "#section-cap02",
+  start: "bottom top",
+  end: "max",
+  onToggle: () => activeLink01()
+});
+
+function activeLink02() {
+  $("#link02").toggleClass("active");
+  $("#link03").toggleClass("active");
+}
+
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.create({
+  trigger: "#section-cap03",
+  start: "bottom top",
+  end: "max",
+  onToggle: () => activeLink02()
+});
+
+function activeLink03() {
+  $("#link03").toggleClass("active");
+  $("#link04").toggleClass("active");
+}
+
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.create({
+  trigger: "#xarxes-text",
+  start: "bottom top",
+  end: "max",
+  onToggle: () => activeLink03()
+});
+
+function activeLink04() {
+  $("#link04").toggleClass("active");
+}
+
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.create({
+  trigger: "#section-cap04",
+  start: "bottom top",
+  end: "max",
+  onToggle: () => activeLink04()
+});
+
+
+
 //change data on mobile
 // const navLinks = document.querySelectorAll('.nav-item')
 // const menuToggle = document.getElementById('navbarSupportedContent')
