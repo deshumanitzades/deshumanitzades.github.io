@@ -218,25 +218,26 @@ if ($(window).width() > 576 && $(window).width() < 992 ) {
   });
   ScrollTrigger.create({
     trigger: "#call-susana-01",
-    start: "top 65%",
+    start: "top 55%",
     end: "top 15%",
     onToggle: () => callSusana01(),
   });
   ScrollTrigger.create({
     trigger: "#call-gabi-01",
-    start: "top 65%",
+    start: "top 55%",
     end: "top 15%",
     onToggle: () => callGabi01(),
+    markers: true
   });
   ScrollTrigger.create({
     trigger: "#call-gabi-02",
-    start: "top 65%",
+    start: "top 55%",
     end: "top 15%",
     onToggle: () => callGabi02(),
   });
   ScrollTrigger.create({
     trigger: "#call-victoria-01",
-    start: "top 65%",
+    start: "top 55%",
     end: "top 15%",
     onToggle: () => callVictoria01(),
   });
@@ -248,31 +249,31 @@ if ($(window).width() > 576 && $(window).width() < 992 ) {
   });
   ScrollTrigger.create({
     trigger: "#call-anaisabel-01",
-    start: "top 65%",
+    start: "top 55%",
     end: "top 15%",
     onToggle: () => callAnaisabel01(),
   });
   ScrollTrigger.create({
     trigger: "#call-liza-01",
-    start: "top 65%",
+    start: "top 55%",
     end: "top 15%",
     onToggle: () => callLiza01(),
   });
   ScrollTrigger.create({
     trigger: "#call-liza-02",
-    start: "top 65%",
+    start: "top 55%",
     end: "top 15%",
     onToggle: () => callLiza02(),
   });
   ScrollTrigger.create({
     trigger: "#call-carlos-01",
-    start: "top 65%",
+    start: "top 55%",
     end: "top 15%",
     onToggle: () => callCarlos01(),
   });
   ScrollTrigger.create({
     trigger: "#call-juandiego-01",
-    start: "top 65%",
+    start: "top 55%",
     end: "top 15%",
     onToggle: () => callJuandiego01(),
   });
