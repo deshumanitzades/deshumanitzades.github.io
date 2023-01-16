@@ -227,7 +227,7 @@ if ($(window).width() > 576 && $(window).width() < 992 ) {
     start: "top 55%",
     end: "top 15%",
     onToggle: () => callGabi01(),
-    markers: true
+    markers: false
   });
   ScrollTrigger.create({
     trigger: "#call-gabi-02",
